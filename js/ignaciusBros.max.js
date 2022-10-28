@@ -32,7 +32,9 @@ music.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
-music.play();
+
+setTimeout(function() { music.play(); }, 2000);
+
 var volume = 'full';
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
